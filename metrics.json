@@ -1,0 +1,111 @@
+{
+  "best_model": "Logistic Regression",
+  "cv_table": [
+    {
+      "Model": "Logistic Regression",
+      "ACCURACY": 0.747,
+      "RECALL": 0.727,
+      "PRECISION": 0.623,
+      "F1": 0.669,
+      "ROC_AUC": 0.836
+    },
+    {
+      "Model": "Random Forest",
+      "ACCURACY": 0.768,
+      "RECALL": 0.758,
+      "PRECISION": 0.644,
+      "F1": 0.695,
+      "ROC_AUC": 0.834
+    },
+    {
+      "Model": "Gradient Boosting",
+      "ACCURACY": 0.763,
+      "RECALL": 0.627,
+      "PRECISION": 0.675,
+      "F1": 0.648,
+      "ROC_AUC": 0.826
+    }
+  ],
+  "holdout_auc": 0.813,
+  "holdout_report": {
+    "healthy": {
+      "precision": 0.8241758241758241,
+      "recall": 0.75,
+      "f1-score": 0.7853403141361257,
+      "support": 100.0
+    },
+    "diabetic": {
+      "precision": 0.6031746031746031,
+      "recall": 0.7037037037037037,
+      "f1-score": 0.6495726495726496,
+      "support": 54.0
+    },
+    "accuracy": 0.7337662337662337,
+    "macro avg": {
+      "precision": 0.7136752136752136,
+      "recall": 0.7268518518518519,
+      "f1-score": 0.7174564818543876,
+      "support": 154.0
+    },
+    "weighted avg": {
+      "precision": 0.7466818895390324,
+      "recall": 0.7337662337662337,
+      "f1-score": 0.737733470717764,
+      "support": 154.0
+    }
+  },
+  "importance": {
+    "Glucose": 0.1607,
+    "BMI": 0.0309,
+    "Pregnancies": 0.0264,
+    "DiabetesPedigreeFunction": 0.0104,
+    "Age": 0.0059,
+    "BloodPressure": 0.0009,
+    "Insulin": 0.0009,
+    "SkinThickness": 0.0004
+  },
+  "medians": {
+    "Pregnancies": 3.0,
+    "Glucose": 117.0,
+    "BloodPressure": 72.0,
+    "SkinThickness": 29.0,
+    "Insulin": 125.0,
+    "BMI": 32.3,
+    "DiabetesPedigreeFunction": 0.3725,
+    "Age": 29.0
+  },
+  "ranges": {
+    "Pregnancies": [
+      0.0,
+      17.0
+    ],
+    "Glucose": [
+      44.0,
+      199.0
+    ],
+    "BloodPressure": [
+      24.0,
+      122.0
+    ],
+    "SkinThickness": [
+      7.0,
+      99.0
+    ],
+    "Insulin": [
+      14.0,
+      846.0
+    ],
+    "BMI": [
+      18.2,
+      67.1
+    ],
+    "DiabetesPedigreeFunction": [
+      0.078,
+      2.42
+    ],
+    "Age": [
+      21.0,
+      81.0
+    ]
+  }
+}
